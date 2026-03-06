@@ -1,0 +1,80 @@
+<div class="container mt-4">
+
+  <div id="profileCarousel" class="carousel carousel-dark slide"   data-bs-ride="carousel"
+  data-bs-interval="3000">
+
+    <div class="carousel-inner">
+
+      <div
+        *ngFor="let profile of profiles; let i = index"
+        class="carousel-item"
+        [class.active]="i === 0"
+        data-bs-interval="3000"
+      >
+
+        <div class="card mx-auto shadow" style="width:320px">
+
+          <img
+            [src]="profile.image"
+            class="card-img-top"
+            (click)="viewProfile(i)"
+          >
+
+          <div class="card-body text-center">
+
+            <h4>{{profile.name}}</h4>
+
+            <p>
+              {{profile.age}} yrs,
+              {{profile.height}},
+              {{profile.profession}},
+              {{profile.city}}
+            </p>
+
+            <div class="d-flex justify-content-around">
+
+              <button class="btn btn-danger" (click)="notInterested()">
+                ❌
+              </button>
+
+              <button class="btn btn-warning" (click)="shortlist()">
+                ⭐
+              </button>
+
+              <button class="btn btn-success" (click)="interested()">
+                ✔
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#profileCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#profileCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+</div>

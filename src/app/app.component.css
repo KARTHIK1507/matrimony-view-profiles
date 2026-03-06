@@ -1,0 +1,8 @@
+.card {
+  max-width: 350px;
+}
+
+img {
+  object-fit: cover;
+  height: 350px;
+}
