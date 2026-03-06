@@ -121,13 +121,13 @@ src/
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/matrimony-profile-carousel.git
+git clone https://github.com/KARTHIK1507/matrimony-view-profiles.git
 ```
 
 2. Navigate to the project directory
 
 ```
-cd matrimony-profile-carousel
+cd matrimony-view-profiles
 ```
 
 3. Install dependencies
