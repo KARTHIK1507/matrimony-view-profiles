@@ -1,3 +1,20 @@
+# Matrimony Profile Swipe App
+
+Angular version: 19
+
+Features:
+- Profile carousel
+- Interested / Not Interested / Shortlisted actions
+- Toast/Alert messages
+- Navigation to profile details
+- State persistence using localStorage
+- Responsive UI
+
+Tech Stack:
+- Angular
+- Bootstrap
+- TypeScript
+
 # MatrimonialApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
